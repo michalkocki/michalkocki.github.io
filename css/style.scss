@@ -1,0 +1,58 @@
+// Variables
+$dark: #2f3640;
+$light: #f5f6fa;
+$orange: #fa983a;
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: $dark;
+    color: $light;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    color: $orange;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-list {
+    list-style: none;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 0 10px;
+        a:link,
+        a:visited {
+            i {
+                font-size: 2rem;
+                color: $light;
+                transition: color 0.2s ease-in-out;
+            }
+        }
+        a:hover,
+        a:active {
+            i {
+                color: $orange;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 400px) {
+    h2 {
+        font-size: 0.75rem;
+    }
+}
